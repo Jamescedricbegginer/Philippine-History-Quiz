@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz tungkol sa mga Bayani ng Pilipinas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f7f7f7;
+        }
+        h1 {
+            color: #4CAF50;
+        }
+        .question-container {
+            margin-bottom: 20px;
+        }
+        .option {
+            margin: 10px 0;
+        }
+        .result {
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+        }
+        .correct {
+            color: green;
+        }
+        .incorrect {
+            color: red;
+        }
+        button:disabled {
+            background-color: #ddd;
+            cursor: not-allowed;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <h1> Philippine History Quiz </h1>
+    <div id="quiz-container">
+        <div class="question-container" id="question-container"></div>
+        <button onclick="nextQuestion()" disabled>Susunod na Tanong</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="config.js"></script>
+    <script src="logger.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
